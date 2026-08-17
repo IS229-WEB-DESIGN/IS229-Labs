@@ -1,0 +1,574 @@
+[
+  {
+    "n": 1,
+    "title": "Project Discovery & Planning",
+    "tech": "Planning \u00b7 Git \u00b7 Markdown",
+    "outcome": "Define the project problem, identify users/tasks, and structure the site architecture.",
+    "before": "A website idea only; no project evidence or code structure exists.",
+    "after": "A documented project plan and repository scaffold ready for semantic HTML.",
+    "core": "Plan the problem, the users and the content before choosing colours or writing HTML.",
+    "concepts": [
+      [
+        "Problem statements",
+        "Guide feature decisions before code is written."
+      ],
+      [
+        "Personas",
+        "Represent realistic users, needs and tasks."
+      ],
+      [
+        "Sitemaps & wireframes",
+        "Plan page structure and layout before implementation."
+      ]
+    ],
+    "tasks": [
+      "Write a purpose statement",
+      "Create three user personas",
+      "Write five user stories with acceptance checks",
+      "Draw the sitemap and homepage wireframe",
+      "Create README.md and placeholder index.html"
+    ],
+    "tests": [
+      "Open index.html in the browser",
+      "Check user stories include user, goal and reason",
+      "Confirm the sitemap matches the planned pages",
+      "Commit evidence to Git"
+    ],
+    "codeA": "# Morobe Discover\nWeek 01 creates planning evidence.\n\n## Output\n- Project brief\n- User stories\n- Sitemap",
+    "codeB": "Home\n\u251c\u2500\u2500 Destinations\n\u251c\u2500\u2500 Events\n\u251c\u2500\u2500 Plan a Trip\n\u2514\u2500\u2500 About",
+    "langA": "markdown",
+    "langB": "text",
+    "next": "Week 02 converts the planned wireframe regions into HTML5 semantic page structure.",
+    "time": "4-5 hours",
+    "milestone": "Project brief, personas, user stories, sitemap, wireframe and repo scaffold",
+    "commit": "Complete Week 01 project discovery and planning"
+  },
+  {
+    "n": 2,
+    "title": "HTML Foundation & Semantic Structure",
+    "tech": "HTML5",
+    "outcome": "Create meaningful page regions and build web pages using appropriate structural elements.",
+    "before": "Week 01 produced the sitemap, wireframe and repository scaffold.",
+    "after": "A semantic HTML skeleton using header, nav, main, section, footer and a clear document outline.",
+    "core": "HTML should describe the meaning and structure of the content before CSS changes the appearance.",
+    "concepts": [
+      [
+        "Document shell",
+        "Provides the page with a valid HTML base."
+      ],
+      [
+        "Semantic elements",
+        "Name page regions by purpose rather than appearance."
+      ],
+      [
+        "Heading order",
+        "Creates a logical document outline for users and assistive technology."
+      ]
+    ],
+    "tasks": [
+      "Create the HTML document shell",
+      "Add title and metadata",
+      "Translate wireframe regions into semantic elements",
+      "Add navigation links and headings",
+      "Add placeholder content for hero, cards and footer"
+    ],
+    "tests": [
+      "Validate the document structure",
+      "Check one h1 per page",
+      "Check navigation links point to planned pages",
+      "Inspect the browser output"
+    ],
+    "codeA": "<header>\n  <h1>Morobe Discover</h1>\n</header>\n<nav>...</nav>\n<main>...</main>\n<footer>...</footer>",
+    "codeB": "<section class=\"hero\">\n  <h2>Discover Morobe</h2>\n  <p>Find destinations, events and trip ideas.</p>\n</section>",
+    "langA": "html",
+    "langB": "html",
+    "next": "Week 03 adds user data collection through forms and starts visual hierarchy rules.",
+    "time": "4-5 hours",
+    "milestone": "Semantic homepage and planned page regions",
+    "commit": "Complete Week 02 semantic HTML structure"
+  },
+  {
+    "n": 3,
+    "title": "Forms & Visual Design Basics",
+    "tech": "HTML5 \u00b7 CSS3",
+    "outcome": "Implement user data collection and apply visual design principles to control user attention.",
+    "before": "Week 02 created a semantic homepage and page regions.",
+    "after": "The site collects trip-planning information and has a clear visual hierarchy.",
+    "core": "Forms are conversations with users; visual design should make that conversation easy to follow.",
+    "concepts": [
+      [
+        "Labels",
+        "Connect visible meaning to each input."
+      ],
+      [
+        "Input types",
+        "Improve mobile keyboards, validation and user experience."
+      ],
+      [
+        "Hierarchy",
+        "Typography, colour and spacing guide attention."
+      ]
+    ],
+    "tasks": [
+      "Create the Plan a Trip form",
+      "Use labels and suitable input types",
+      "Add required fields and helpful placeholder text",
+      "Create basic CSS variables",
+      "Apply typography, colour and spacing"
+    ],
+    "tests": [
+      "Try submitting an empty form",
+      "Check every input has a visible label",
+      "Verify focus moves logically",
+      "Check text contrast and spacing"
+    ],
+    "codeA": "<label for=\"visitorName\">Your name</label>\n<input id=\"visitorName\" name=\"visitorName\" type=\"text\" required>",
+    "codeB": "form {\n  max-width: 720px;\n  display: grid;\n  gap: 1rem;\n}",
+    "langA": "html",
+    "langB": "css",
+    "next": "Week 04 uses Flexbox and Grid to organise navigation, forms and card galleries.",
+    "time": "5 hours",
+    "milestone": "Trip form plus typography, colour and spacing system",
+    "commit": "Complete Week 03 forms and visual design"
+  },
+  {
+    "n": 4,
+    "title": "Layout Systems (Flexbox & Grid)",
+    "tech": "CSS Flexbox \u00b7 CSS Grid",
+    "outcome": "Manage one-dimensional and two-dimensional layouts for complex page sections.",
+    "before": "Week 03 produced forms and a basic visual design system.",
+    "after": "The website uses intentional layout systems for navigation, forms, cards and page sections.",
+    "core": "Use Flexbox for one-dimensional alignment and Grid for two-dimensional page and card structures.",
+    "concepts": [
+      [
+        "Flexbox",
+        "Aligns items along one main axis."
+      ],
+      [
+        "Grid",
+        "Creates rows and columns together."
+      ],
+      [
+        "gap",
+        "Adds maintainable spacing without margin hacks."
+      ]
+    ],
+    "tasks": [
+      "Convert navigation into a Flexbox row",
+      "Align form controls with consistent gap",
+      "Create a card gallery with CSS Grid",
+      "Use container width to improve readability",
+      "Remove manual spacing hacks"
+    ],
+    "tests": [
+      "Resize the browser width",
+      "Check navigation alignment",
+      "Inspect card gaps and wrapping",
+      "Confirm form labels align with controls"
+    ],
+    "codeA": ".site-nav {\n  display: flex;\n  gap: 1rem;\n  align-items: center;\n}",
+    "codeB": ".card-grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.25rem;\n}",
+    "langA": "css",
+    "langB": "css",
+    "next": "Week 05 adapts these layouts for mobile, tablet and desktop using responsive design.",
+    "time": "5 hours",
+    "milestone": "Flexbox navigation, aligned forms and Grid destination cards",
+    "commit": "Complete Week 04 Flexbox and Grid layouts"
+  },
+  {
+    "n": 5,
+    "title": "Responsive Design",
+    "tech": "CSS Media Queries",
+    "outcome": "Adapt the website interface to function across various device screen sizes.",
+    "before": "Week 04 created structured layouts using Flexbox and Grid.",
+    "after": "The interface adapts cleanly across mobile, tablet and desktop widths.",
+    "core": "Start with flexible layouts and add breakpoints when the layout needs help, not because of a device name.",
+    "concepts": [
+      [
+        "Mobile-first CSS",
+        "Starts with the simplest layout and progressively enhances it."
+      ],
+      [
+        "Media queries",
+        "Apply layout changes at meaningful widths."
+      ],
+      [
+        "Fluid media",
+        "Prevents images and grids from forcing horizontal scroll."
+      ]
+    ],
+    "tasks": [
+      "Stack navigation and cards on small screens",
+      "Add a tablet/desktop breakpoint",
+      "Make images and forms fluid",
+      "Test the main user journey at several widths",
+      "Record screenshots as evidence"
+    ],
+    "tests": [
+      "Use DevTools responsive mode",
+      "Test 360px, 768px and desktop widths",
+      "Check tap targets and line length",
+      "Confirm no horizontal scrolling"
+    ],
+    "codeA": "img {\n  max-width: 100%;\n  height: auto;\n}",
+    "codeB": "@media (min-width: 768px) {\n  .card-grid {\n    grid-template-columns: repeat(3, 1fr);\n  }\n}",
+    "langA": "css",
+    "langB": "css",
+    "next": "Week 06 adds JavaScript and DOM interaction to the responsive interface.",
+    "time": "5 hours",
+    "milestone": "Mobile-first layouts and tested breakpoints",
+    "commit": "Complete Week 05 responsive design"
+  },
+  {
+    "n": 6,
+    "title": "JavaScript & DOM Interaction",
+    "tech": "JavaScript \u00b7 DOM",
+    "outcome": "Add behaviour to a page by connecting programming logic to user actions via the DOM.",
+    "before": "Week 05 produced a responsive interface ready for interaction.",
+    "after": "Navigation and interface components respond to user actions through JavaScript.",
+    "core": "Use JavaScript to listen for events, update state and change the interface deliberately.",
+    "concepts": [
+      [
+        "DOM",
+        "The browser's object model of the page."
+      ],
+      [
+        "Event listeners",
+        "Connect user actions to functions."
+      ],
+      [
+        "Class toggling",
+        "Keeps behaviour in JavaScript and styling in CSS."
+      ]
+    ],
+    "tasks": [
+      "Add DOM hooks to the navigation",
+      "Write an event listener for the mobile menu",
+      "Toggle a state class instead of inline styles",
+      "Add a simple theme or FAQ interaction",
+      "Test interaction with click and keyboard focus"
+    ],
+    "tests": [
+      "Open the browser console",
+      "Click the menu several times",
+      "Check class changes in DevTools",
+      "Verify the site still works if JavaScript fails gracefully"
+    ],
+    "codeA": "const menuButton = document.querySelector(\".menu-toggle\");\nconst nav = document.querySelector(\".site-nav\");\nmenuButton.addEventListener(\"click\", () => {\n  nav.classList.toggle(\"is-open\");\n});",
+    "codeB": ".site-nav.is-open {\n  display: flex;\n}",
+    "langA": "javascript",
+    "langB": "css",
+    "next": "Week 07 strengthens forms with validation and stores lightweight choices in the browser.",
+    "time": "5-6 hours",
+    "milestone": "Interactive mobile navigation and state-based UI behaviour",
+    "commit": "Complete Week 06 JavaScript DOM interaction"
+  },
+  {
+    "n": 7,
+    "title": "Advanced Forms & Storage",
+    "tech": "JavaScript \u00b7 Web Storage API",
+    "outcome": "Implement client-side validation and persist lightweight user choices between browser sessions.",
+    "before": "Week 06 added DOM interaction and state changes.",
+    "after": "Forms provide clear validation feedback and lightweight preferences can persist across visits.",
+    "core": "Validate close to the user and store only lightweight, non-sensitive values in browser storage.",
+    "concepts": [
+      [
+        "Client-side validation",
+        "Improves feedback but does not replace server-side validation."
+      ],
+      [
+        "localStorage",
+        "Stores string values across browser sessions."
+      ],
+      [
+        "Safe storage",
+        "Avoids private, secret or sensitive information in the browser."
+      ]
+    ],
+    "tasks": [
+      "Add custom validation messages",
+      "Prevent submission when required logic fails",
+      "Save theme choice or favourite destination IDs",
+      "Recover saved values on page load",
+      "Display clear feedback to users"
+    ],
+    "tests": [
+      "Submit invalid values",
+      "Refresh the browser and check saved preferences",
+      "Clear storage and retest default state",
+      "Check storage does not contain private data"
+    ],
+    "codeA": "if (days < 1) {\n  showError(\"Trip length must be at least one day.\");\n  return;\n}",
+    "codeB": "localStorage.setItem(\"theme\", selectedTheme);\nconst savedTheme = localStorage.getItem(\"theme\");",
+    "langA": "javascript",
+    "langB": "javascript",
+    "next": "Week 08 loads destination and event content from JSON using the Fetch API.",
+    "time": "5-6 hours",
+    "milestone": "Validation feedback plus persisted lightweight preferences",
+    "commit": "Complete Week 07 validation and storage"
+  },
+  {
+    "n": 8,
+    "title": "Dynamic Data & Fetch API",
+    "tech": "JSON \u00b7 Fetch API \u00b7 JavaScript",
+    "outcome": "Decouple content from structure by loading and rendering dynamic external data.",
+    "before": "Week 07 added validation and saved lightweight user choices.",
+    "after": "Destination and event content is loaded from JSON and rendered dynamically.",
+    "core": "Store repeatable content as data, fetch it, then render the interface from that data.",
+    "concepts": [
+      [
+        "JSON",
+        "Represents structured content independently from HTML."
+      ],
+      [
+        "fetch()",
+        "Loads resources asynchronously."
+      ],
+      [
+        "Filtering",
+        "Transforms data before rendering it into the interface."
+      ]
+    ],
+    "tasks": [
+      "Create destinations.json",
+      "Fetch the JSON file from JavaScript",
+      "Render cards into the DOM",
+      "Add search or category filtering",
+      "Show loading and error states"
+    ],
+    "tests": [
+      "Run through a local web server",
+      "Break the JSON path and observe the error state",
+      "Test filters with empty results",
+      "Check rendered cards preserve accessibility labels"
+    ],
+    "codeA": "const response = await fetch(\"data/destinations.json\");\nif (!response.ok) throw new Error(\"Data failed to load\");\nconst destinations = await response.json();",
+    "codeB": "const html = destinations\n  .map(item => `<article class=\"card\">${item.name}</article>`)\n  .join(\"\");",
+    "langA": "javascript",
+    "langB": "javascript",
+    "next": "Week 09 checks usability, accessibility and the quality of the interactive site.",
+    "time": "6 hours",
+    "milestone": "JSON-backed destination cards, filters, loading and error states",
+    "commit": "Complete Week 08 dynamic data and Fetch API"
+  },
+  {
+    "n": 9,
+    "title": "UX, Accessibility & Testing",
+    "tech": "Accessibility \u00b7 UX \u00b7 Validation",
+    "outcome": "Ensure the site is usable for people with different abilities and optimized for interface quality.",
+    "before": "Week 08 created dynamic data rendering and filtering.",
+    "after": "The site has clearer labels, keyboard focus, accessible interactive states and documented quality checks.",
+    "core": "Accessibility is not an optional add-on; it is part of professional interface quality.",
+    "concepts": [
+      [
+        "Native HTML",
+        "Provides built-in accessibility when used correctly."
+      ],
+      [
+        "Visible focus",
+        "Shows keyboard users where interaction currently is."
+      ],
+      [
+        "Failure-path testing",
+        "Checks errors and edge cases, not only successful use."
+      ]
+    ],
+    "tasks": [
+      "Add or confirm labels and alt text",
+      "Add visible focus styles",
+      "Test the journey using keyboard only",
+      "Document validation and accessibility checks",
+      "Fix the highest-impact issues first"
+    ],
+    "tests": [
+      "Tab through the page",
+      "Run HTML/CSS validation",
+      "Use Lighthouse or a manual checklist",
+      "Confirm errors are visible and understandable"
+    ],
+    "codeA": ".skip-link:focus {\n  position: static;\n  padding: .75rem;\n}",
+    "codeB": "<label for=\"destinationSearch\">Search destinations</label>\n<input id=\"destinationSearch\" type=\"search\">",
+    "langA": "css",
+    "langB": "html",
+    "next": "Week 10 returns to Web Storage in more depth and refines saved preferences.",
+    "time": "5 hours",
+    "milestone": "Keyboard support, accessible labels/focus and quality evidence",
+    "commit": "Complete Week 09 accessibility and UX testing"
+  },
+  {
+    "n": 10,
+    "title": "Web Storage",
+    "tech": "localStorage \u00b7 JSON",
+    "outcome": "Persist lightweight user preferences between browser sessions.",
+    "before": "Week 09 identified usability and accessibility issues in the interactive site.",
+    "after": "Favourites and preferences persist safely and recover from missing or corrupted values.",
+    "core": "Browser storage is useful for convenience, but it must be small, safe and recoverable.",
+    "concepts": [
+      [
+        "localStorage",
+        "Persists after the browser closes."
+      ],
+      [
+        "sessionStorage",
+        "Lasts only for the current browser session."
+      ],
+      [
+        "JSON parsing",
+        "Converts stored strings back into arrays or objects safely."
+      ]
+    ],
+    "tasks": [
+      "Review current storage use",
+      "Store favourite destination IDs",
+      "Restore saved theme on page load",
+      "Handle missing or corrupted storage safely",
+      "Provide a clear reset option"
+    ],
+    "tests": [
+      "Refresh and reopen the browser",
+      "Inspect Application > Local Storage",
+      "Test corrupted data recovery",
+      "Verify sensitive data is not stored"
+    ],
+    "codeA": "const favourites = JSON.parse(localStorage.getItem(\"favourites\") || \"[]\");\nfavourites.push(\"rainforest-walk\");\nlocalStorage.setItem(\"favourites\", JSON.stringify(favourites));",
+    "codeB": "try {\n  const data = JSON.parse(savedValue);\n} catch {\n  localStorage.removeItem(\"favourites\");\n}",
+    "langA": "javascript",
+    "langB": "javascript",
+    "next": "Week 11 strengthens data rendering and filters using the stored IDs and JSON content.",
+    "time": "5 hours",
+    "milestone": "Persistent favourites/theme with safe recovery and reset",
+    "commit": "Complete Week 10 Web Storage"
+  },
+  {
+    "n": 11,
+    "title": "Data Rendering",
+    "tech": "JavaScript \u00b7 JSON \u00b7 Filters",
+    "outcome": "Load and render dynamic content from external data sources.",
+    "before": "Week 10 persisted favourites and preferences using Web Storage.",
+    "after": "Dynamic content is filtered, rendered consistently, and explains empty/error states.",
+    "core": "Data rendering is a pipeline: fetch, validate, transform, render and handle failure.",
+    "concepts": [
+      [
+        "Array filtering",
+        "Selects only data matching the current query or category."
+      ],
+      [
+        "Template strings",
+        "Create consistent repeated HTML from data."
+      ],
+      [
+        "Empty/error states",
+        "Explain what happened when no result or load failure occurs."
+      ]
+    ],
+    "tasks": [
+      "Review the data shape",
+      "Write renderCard() for one item",
+      "Render all matching items",
+      "Add filter controls and empty states",
+      "Connect favourites to rendered cards"
+    ],
+    "tests": [
+      "Search for a known result",
+      "Search for no result",
+      "Disable or rename the JSON file",
+      "Confirm the UI explains loading and errors"
+    ],
+    "codeA": "const matches = destinations.filter(item =>\n  item.name.toLowerCase().includes(query)\n);",
+    "codeB": "results.innerHTML = matches.length\n  ? matches.map(renderCard).join(\"\")\n  : \"<p>No destinations found.</p>\";",
+    "langA": "javascript",
+    "langB": "javascript",
+    "next": "Week 12 performs structured UX and testing checks before release.",
+    "time": "5-6 hours",
+    "milestone": "Reusable rendering function, filtering and robust interface states",
+    "commit": "Complete Week 11 data rendering"
+  },
+  {
+    "n": 12,
+    "title": "UX & Testing",
+    "tech": "Testing \u00b7 Accessibility \u00b7 Performance",
+    "outcome": "Ensure the site is accessible, validated and optimized for performance.",
+    "before": "Week 11 completed dynamic data rendering and filter behaviour.",
+    "after": "The project has structured test evidence, validation results and documented fixes.",
+    "core": "Professional release requires evidence: tests, screenshots, validation reports and fixes.",
+    "concepts": [
+      [
+        "User-journey testing",
+        "Checks what users actually do across the interface."
+      ],
+      [
+        "Validation",
+        "Finds code errors browsers may otherwise tolerate."
+      ],
+      [
+        "Quality requirements",
+        "Treat accessibility and performance as release criteria."
+      ]
+    ],
+    "tasks": [
+      "Create a testing checklist",
+      "Validate HTML and CSS",
+      "Test keyboard navigation and focus",
+      "Run responsive and performance checks",
+      "Record fixes in a test report"
+    ],
+    "tests": [
+      "Verify broken links",
+      "Check console errors",
+      "Run Lighthouse or manual accessibility checks",
+      "Retest after fixing problems"
+    ],
+    "codeA": "// Test note example\nExpected: menu opens with keyboard.\nActual: focus moves to first link.\nResult: Pass.",
+    "codeB": "<img src=\"assets/images/market.jpg\" alt=\"Local market in Morobe\">",
+    "langA": "text",
+    "langB": "html",
+    "next": "Week 13 deploys the production-ready website and prepares the final demonstration.",
+    "time": "5 hours",
+    "milestone": "Test report, validation evidence and resolved high-impact defects",
+    "commit": "Complete Week 12 UX and testing"
+  },
+  {
+    "n": 13,
+    "title": "Deployment & Release",
+    "tech": "Git \u00b7 GitHub Pages",
+    "outcome": "Publish a production-ready website to a live public URL.",
+    "before": "Week 12 produced test evidence and fixed quality issues.",
+    "after": "The project is uploaded, documented, deployed and ready for final demonstration/code defence.",
+    "core": "Release joins the technical product, documentation, testing evidence and public URL into one final deliverable.",
+    "concepts": [
+      [
+        "README",
+        "Documents purpose, structure and running instructions."
+      ],
+      [
+        "Git history",
+        "Provides traceable evidence of progress."
+      ],
+      [
+        "Deployment",
+        "Reveals path, asset and integration issues that local testing can miss."
+      ]
+    ],
+    "tasks": [
+      "Finish README and run instructions",
+      "Check final file paths and assets",
+      "Push final code to GitHub",
+      "Enable GitHub Pages",
+      "Prepare a user-journey-based demonstration"
+    ],
+    "tests": [
+      "Open the public URL",
+      "Test navigation after deployment",
+      "Check console and missing assets",
+      "Trace final features back to Week 01 user stories"
+    ],
+    "codeA": "git add .\ngit commit -m \"Week 13 final release\"\ngit push origin main",
+    "codeB": "Repository \u2192 Settings \u2192 Pages\nSource: Deploy from a branch\nBranch: main / (root)",
+    "langA": "bash",
+    "langB": "text",
+    "next": "Final demo and code defence: explain how the project satisfies the original user stories.",
+    "time": "4-5 hours",
+    "milestone": "Published GitHub Pages site, final README, test evidence and demonstration",
+    "commit": "Week 13 final release"
+  }
+]

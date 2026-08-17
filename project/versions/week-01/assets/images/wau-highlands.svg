@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="t d">
+<title id="t">Wau Highlands Trail</title><desc id="d">Highlands teaching destination</desc>
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#3a5a40"/><stop offset="1" stop-color="#81b29a"/></linearGradient></defs>
+<rect width="1200" height="520" fill="url(#g)"/><circle cx="980" cy="100" r="65" fill="#f2cc8f" opacity=".9"/>
+<path d="M0 360 C180 270 310 390 480 300 S760 280 900 340 S1080 300 1200 330 V520 H0Z" fill="#163c35" opacity=".88"/>
+<path d="M0 410 C190 330 350 430 520 365 S810 350 1200 405 V520 H0Z" fill="#2e7d6b"/>
+<text x="70" y="110" font-family="Arial,sans-serif" font-size="54" font-weight="700" fill="white">Wau Highlands Trail</text>
+<text x="72" y="160" font-family="Arial,sans-serif" font-size="24" fill="white" opacity=".92">Highlands teaching destination</text>
+</svg>

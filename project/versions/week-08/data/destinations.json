@@ -1,0 +1,32 @@
+[
+  {
+    "id": "lae-city",
+    "name": "Lae City Discovery",
+    "category": "culture",
+    "location": "Lae",
+    "tagline": "Markets, gardens and an introduction to Morobe’s urban gateway.",
+    "price": 180,
+    "rating": 4.6,
+    "img": "assets/images/lae-city.svg"
+  },
+  {
+    "id": "huon-coast",
+    "name": "Huon Coast Escape",
+    "category": "coast",
+    "location": "Huon Gulf",
+    "tagline": "Coastal scenery and a relaxed seaside route.",
+    "price": 420,
+    "rating": 4.8,
+    "img": "assets/images/huon-coast.svg"
+  },
+  {
+    "id": "wau-highlands",
+    "name": "Wau Highlands Trail",
+    "category": "adventure",
+    "location": "Wau",
+    "tagline": "Mountain scenery and an active highlands experience.",
+    "price": 520,
+    "rating": 4.7,
+    "img": "assets/images/wau-highlands.svg"
+  }
+]

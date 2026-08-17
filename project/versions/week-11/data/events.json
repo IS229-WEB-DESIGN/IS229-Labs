@@ -1,0 +1,23 @@
+[
+  {
+    "date": "2026-09-05",
+    "type": "Culture",
+    "title": "Morobe Craft Showcase",
+    "location": "Lae",
+    "description": "Fictional teaching event used to demonstrate structured content."
+  },
+  {
+    "date": "2026-09-19",
+    "type": "Community",
+    "title": "Coastal Food Weekend",
+    "location": "Huon Gulf",
+    "description": "Fictional event for DOM and JSON rendering practice."
+  },
+  {
+    "date": "2026-10-10",
+    "type": "Adventure",
+    "title": "Highlands Trail Day",
+    "location": "Wau",
+    "description": "Fictional event used for front-end development exercises."
+  }
+]
